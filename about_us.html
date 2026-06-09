@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us — Project Recall Rescue</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap');
+
+        h1,
+        h2,
+        h3,
+        .logo {
+            font-family: 'Playfair Display', serif;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        ::selection {
+            background-color: #e9d5ff;
+            /* purple-200 */
+            color: #581c87;
+            /* purple-900 */
+        }
+
+        /* Hover active state transitions */
+        .btn-hover-effect {
+            transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .btn-hover-effect:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 24px -10px rgba(139, 92, 246, 0.3);
+        }
+
+        /* Reveal sections on scroll */
+        .reveal {
+            opacity: 0;
+            transform: translateY(45px);
+            filter: blur(4px);
+            transition: opacity 1.4s cubic-bezier(0.16, 1, 0.3, 1),
+                transform 1.4s cubic-bezier(0.16, 1, 0.3, 1),
+                filter 1.4s cubic-bezier(0.16, 1, 0.3, 1);
+            will-change: transform, opacity, filter;
+        }
+
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+            filter: blur(0);
+        }
+
+        .ramcharit-img {
+            transform: scale(1.8) translate(15%, 5%) !important;
+            transition: transform 0.7s cubic-bezier(0.16, 1, 0.3, 1) !important;
+            transform-origin: center !important;
+        }
+
+        .group:hover .ramcharit-img {
+            transform: scale(1.9) translate(15%, 5%) !important;
+        }
+    </style>
+</head>
+
+<body class="min-h-screen bg-[#f8f9fa] font-sans selection:bg-purple-200 selection:text-purple-900">
+
+    <!-- --- HEADER SECTION --- -->
+    <div class="p-4 md:p-6">
+        <header
+            class="flex items-center justify-between relative z-10 bg-white/80 backdrop-blur-md px-8 py-4 rounded-[2rem] shadow-sm border border-gray-200/50">
+            <a href="project_recall_rescue.html"
+                class="flex items-center gap-2 text-gray-900 hover:text-purple-600 transition-colors">
+                <i data-lucide="brain" class="w-7 h-7 text-purple-600"></i>
+                <span class="logo text-xl md:text-2xl tracking-wide font-medium">Project Recall Rescue</span>
+            </a>
+
+            <nav class="hidden md:flex items-center gap-8 text-gray-600 text-sm font-medium">
+                <a href="project_recall_rescue.html#concept" class="hover:text-purple-600 transition-colors">Concept</a>
+                <a href="project_recall_rescue.html#science" class="hover:text-purple-600 transition-colors">The
+                    Science</a>
+                <a href="project_recall_rescue.html#methodology"
+                    class="hover:text-purple-600 transition-colors">Methodology</a>
+                <a href="about_us.html" class="text-purple-600 transition-colors">About Us</a>
+            </nav>
+
+            <div class="flex items-center gap-4 hidden md:block">
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLScTG6FWtbY2MbhrTp1YMy4JMD5PxQMGI_edBDicRWk3Ptg1dw/viewform?usp=publish-editor"
+                    target="_blank" rel="noopener noreferrer"
+                    class="bg-purple-600 text-white px-5 py-2.5 rounded-full font-medium text-sm hover:bg-purple-700 transition-all btn-hover-effect shadow-md shadow-purple-500/20">
+                    Become a Mentor
+                </a>
+            </div>
+
+            <div class="md:hidden flex items-center">
+                <button class="text-gray-900">
+                    <i data-lucide="menu" class="w-7 h-7"></i>
+                </button>
+            </div>
+        </header>
+    </div>
+
+    <!-- --- ABOUT US HERO --- -->
+    <section class="py-16 px-6 md:px-16 max-w-7xl mx-auto reveal text-center">
+        <h3 class="text-sm font-semibold uppercase tracking-wider text-purple-600 mb-4">The Minds Behind The Machine
+        </h3>
+        <h1 class="text-4xl md:text-6xl font-medium text-gray-900 mb-6 leading-tight max-w-3xl mx-auto">
+            Meet the team pioneering cognitive restoration.
+        </h1>
+        <p class="text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed">
+            We are a trio of high school juniors dedicated to translating cutting-edge BCI research into real-world
+            applications.
+        </p>
+    </section>
+
+    <!-- --- TEAM GRID --- -->
+    <section class="pb-24 px-6 md:px-16 max-w-7xl mx-auto reveal">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12">
+
+            <!-- Team Member 1 -->
+            <div
+                class="bg-white rounded-[2rem] overflow-hidden shadow-sm border border-purple-50 hover:shadow-xl hover:-translate-y-2 transition-all duration-500 group">
+                <div class="h-80 w-full overflow-hidden bg-gray-100 relative">
+                    <img src="https://res.cloudinary.com/dfw9z5ajv/image/upload/f_auto,q_auto/v1781042876/IMG_2664_mfxn2p.jpg"
+                        alt="Ramcharit Podamala" class="w-full h-full object-cover ramcharit-img">
+                </div>
+                <div class="p-8">
+                    <h3 class="text-2xl font-medium text-gray-900 mb-1">Ramcharit Podamala</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed mb-6">
+                        As an aspiring physician, this project immediately hooked me because it connects my love for medicine with the fascinating, data-heavy side of neuro-technology. Figuring out how to track brainwaves in real time sparked a huge passion in me for neuroscience and understanding how we actually think. With tens of millions of people currently facing dementia, I just refuse to accept a world where the people we love lose the memories that give them a joyful life.
+                    </p>
+                    <div class="flex gap-4">
+                        <a href="#" class="text-gray-400 hover:text-purple-600 transition-colors" aria-label="LinkedIn">
+                            <i data-lucide="linkedin" class="w-5 h-5"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-purple-600 transition-colors" aria-label="Twitter">
+                            <i data-lucide="twitter" class="w-5 h-5"></i>
+                        </a>
+                        <a href="mailto:ramcharitpodamala9@gmail.com"
+                            class="text-gray-400 hover:text-purple-600 transition-colors" aria-label="Email">
+                            <i data-lucide="mail" class="w-5 h-5"></i>
+                        </a>
+                        <a href="tel:945-289-7248" class="text-gray-400 hover:text-purple-600 transition-colors"
+                            aria-label="Phone">
+                            <i data-lucide="phone" class="w-5 h-5"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Team Member 2 -->
+            <div
+                class="bg-white rounded-[2rem] overflow-hidden shadow-sm border border-purple-50 hover:shadow-xl hover:-translate-y-2 transition-all duration-500 group">
+                <div class="h-80 w-full overflow-hidden bg-gray-100 relative">
+                    <!-- Placeholder Headshot -->
+                    <img src="https://res.cloudinary.com/dfw9z5ajv/image/upload/f_auto,q_auto/v1780974322/20260607_194341_diyyrw.jpg"
+                        alt="Krish Bharadiya"
+                        class="w-full h-full object-cover object-[90%_center] group-hover:scale-105 transition-transform duration-700">
+                </div>
+                <div class="p-8">
+                    <h3 class="text-2xl font-medium text-gray-900 mb-1">Krish Bharadiya</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed mb-6">
+                        I have a passion for AI technology and creating AI solutions to help people. This project caught
+                        my interest immediately because of its data heavy nature and the technical possibilities but it
+                        also helped me find my passion in neuroscience and how people think. I want to be able to take
+                        my passions and help people remember the more beautiful things in life.
+                    </p>
+                    <div class="flex gap-4">
+                        <a href="#" class="text-gray-400 hover:text-purple-600 transition-colors" aria-label="LinkedIn">
+                            <i data-lucide="linkedin" class="w-5 h-5"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-purple-600 transition-colors" aria-label="Github">
+                            <i data-lucide="github" class="w-5 h-5"></i>
+                        </a>
+                        <a href="mailto:bharadiyakrish@gmail.com" class="text-gray-400 hover:text-purple-600 transition-colors"
+                            aria-label="Email">
+                            <i data-lucide="mail" class="w-5 h-5"></i>
+                        </a>
+                        <a href="tel:469-742-3271" class="text-gray-400 hover:text-purple-600 transition-colors"
+                            aria-label="Phone">
+                            <i data-lucide="phone" class="w-5 h-5"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Team Member 3 -->
+            <div
+                class="bg-white rounded-[2rem] overflow-hidden shadow-sm border border-purple-50 hover:shadow-xl hover:-translate-y-2 transition-all duration-500 group">
+                <div class="h-80 w-full overflow-hidden bg-gray-100 relative">
+                    <!-- Stylized Silhouette Placeholder -->
+                    <div
+                        class="w-full h-full bg-gradient-to-br from-purple-100 via-pink-50 to-purple-50 flex flex-col items-center justify-center gap-2 group-hover:scale-105 transition-transform duration-700">
+                        <i data-lucide="user" class="w-16 h-16 text-purple-300"></i>
+                        <span class="text-xs font-medium uppercase tracking-wider text-purple-400">Photo Coming
+                            Soon</span>
+                    </div>
+                </div>
+                <div class="p-8">
+                    <h3 class="text-2xl font-medium text-gray-900 mb-1">Moosa Mir</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed mb-6">
+                        I have a passion for understanding the human mind and exploring how our brains work. This neuroscience research project caught my interest immediately because of its curiosity-driven nature and the complex questions it tries to answer, but it also helped me find my passion for collaboration and scientific discovery. I want to be able to take my love for learning—and even the focus I get from playing soccer—and use it to help people keep their minds sharp and healthy.
+                    </p>
+                    <div class="flex gap-4">
+                        <a href="#" class="text-gray-400 hover:text-purple-600 transition-colors" aria-label="LinkedIn">
+                            <i data-lucide="linkedin" class="w-5 h-5"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-purple-600 transition-colors" aria-label="Github">
+                            <i data-lucide="github" class="w-5 h-5"></i>
+                        </a>
+                        <a href="mailto:mirmoosa1014@gmail.com" class="text-gray-400 hover:text-purple-600 transition-colors"
+                            aria-label="Email">
+                            <i data-lucide="mail" class="w-5 h-5"></i>
+                        </a>
+                        <a href="tel:945-310-7550" class="text-gray-400 hover:text-purple-600 transition-colors"
+                            aria-label="Phone">
+                            <i data-lucide="phone" class="w-5 h-5"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer
+        class="text-center pb-12 pt-6 text-gray-500 text-sm border-t border-gray-200 mt-12 max-w-7xl mx-auto w-full px-6">
+        <p>Project Recall Rescue — A Closed-Loop EEG Memory System</p>
+        <p class="mt-2">Pioneering the future of non-invasive cognitive enhancement.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+
+        // --- Intersection Observer for Scroll Reveals ---
+        const revealElements = document.querySelectorAll('.reveal');
+        const observerOptions = {
+            root: null,
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const revealObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        revealElements.forEach(el => {
+            // Add a small delay for staggered animation on load
+            setTimeout(() => {
+                revealObserver.observe(el);
+                // Also force it active if it's already in viewport on load
+                const rect = el.getBoundingClientRect();
+                if (rect.top < window.innerHeight) {
+                    el.classList.add('active');
+                }
+            }, 100);
+        });
+    </script>
+</body>
+
+</html>
