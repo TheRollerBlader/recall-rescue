@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { Brain, Menu, Linkedin, Twitter, Github, Mail, User, Phone } from 'lucide-react';
+import { Brain, Menu, Mail, User, Phone } from 'lucide-react';
 import Footer from '../components/Footer';
 
 export default function AboutUs() {
@@ -97,12 +97,6 @@ export default function AboutUs() {
                 As an aspiring physician, this project immediately hooked me because it connects my love for medicine with the fascinating, data-heavy side of neuro-technology. Figuring out how to track brainwaves in real time sparked a huge passion in me for neuroscience and understanding how we actually think. With tens of millions of people currently facing dementia, I just refuse to accept a world where the people we love lose the memories that give them a joyful life.
               </p>
               <div className="flex gap-4">
-                <a href="#" className="text-gray-400 hover:text-purple-600 transition-colors" aria-label="LinkedIn">
-                  <Linkedin className="w-5 h-5" />
-                </a>
-                <a href="#" className="text-gray-400 hover:text-purple-600 transition-colors" aria-label="Twitter">
-                  <Twitter className="w-5 h-5" />
-                </a>
                 <a href="mailto:ramcharitpodamala9@gmail.com" className="text-gray-400 hover:text-purple-600 transition-colors" aria-label="Email">
                   <Mail className="w-5 h-5" />
                 </a>
@@ -126,12 +120,6 @@ export default function AboutUs() {
                 I have a passion for AI technology and creating AI solutions to help people. This project caught my interest immediately because of its data heavy nature and the technical possibilities but it also helped me find my passion in neuroscience and how people think. I want to be able to take my passions and help people remember the more beautiful things in life.
               </p>
               <div className="flex gap-4">
-                <a href="#" className="text-gray-400 hover:text-purple-600 transition-colors" aria-label="LinkedIn">
-                  <Linkedin className="w-5 h-5" />
-                </a>
-                <a href="#" className="text-gray-400 hover:text-purple-600 transition-colors" aria-label="Github">
-                  <Github className="w-5 h-5" />
-                </a>
                 <a href="mailto:bharadiyakrish@gmail.com" className="text-gray-400 hover:text-purple-600 transition-colors" aria-label="Email">
                   <Mail className="w-5 h-5" />
                 </a>
@@ -156,12 +144,6 @@ export default function AboutUs() {
                 I have a passion for understanding the human mind and exploring how our brains work. This neuroscience research project caught my interest immediately because of its curiosity-driven nature and the complex questions it tries to answer, but it also helped me find my passion for collaboration and scientific discovery. I want to be able to take my love for learning—and even the focus I get from playing soccer—and use it to help people keep their minds sharp and healthy.
               </p>
               <div className="flex gap-4">
-                <a href="#" className="text-gray-400 hover:text-purple-600 transition-colors" aria-label="LinkedIn">
-                  <Linkedin className="w-5 h-5" />
-                </a>
-                <a href="#" className="text-gray-400 hover:text-purple-600 transition-colors" aria-label="Github">
-                  <Github className="w-5 h-5" />
-                </a>
                 <a href="mailto:mirmoosa1014@gmail.com" className="text-gray-400 hover:text-purple-600 transition-colors" aria-label="Email">
                   <Mail className="w-5 h-5" />
                 </a>
