@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Brain, Menu, Activity, ChevronDown, Database, CheckCircle2 } from 'lucide-react';
+import { Activity, ChevronDown, Database, CheckCircle2 } from 'lucide-react';
+import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 
 export default function Home() {
@@ -188,25 +189,7 @@ export default function Home() {
           ></div>
 
           {/* Header */}
-          <header className="flex items-center justify-between relative z-10">
-            <div className="flex items-center gap-2 text-white">
-              <Brain className="w-7 h-7" />
-              <span className="logo text-2xl tracking-wide font-medium">Project Recall Rescue</span>
-            </div>
-            
-            <nav className="hidden md:flex items-center gap-8 text-white/90 text-sm font-medium backdrop-blur-md bg-white/10 px-8 py-3 rounded-full border border-white/20">
-              <button onClick={() => handleScroll('concept')} className="hover:text-white transition-colors">Concept</button>
-              <button onClick={() => handleScroll('science')} className="hover:text-white transition-colors">The Science</button>
-              <button onClick={() => handleScroll('methodology')} className="hover:text-white transition-colors">Methodology</button>
-              <Link to="/about" className="hover:text-white transition-colors">About Us</Link>
-            </nav>
-
-            <div className="flex items-center gap-4">
-              <button className="text-white">
-                <Menu className="w-7 h-7" />
-              </button>
-            </div>
-          </header>
+          <Navbar transparent={true} />
 
           {/* Hero Content */}
           <div className="flex flex-col items-center text-center relative z-10 max-w-4xl mx-auto mt-20 mb-10">
