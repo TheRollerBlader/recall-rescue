@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { Mail, User, Phone } from 'lucide-react';
+import { Mail, Phone } from 'lucide-react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 
@@ -106,10 +106,9 @@ export default function AboutUs() {
           {/* Team Member 3 */}
           <div className="bg-white rounded-[2rem] overflow-hidden shadow-sm border border-purple-50 hover:shadow-xl hover:-translate-y-2 transition-all duration-500 group">
             <div className="h-80 w-full overflow-hidden bg-gray-100 relative">
-              <div className="w-full h-full bg-gradient-to-br from-purple-100 via-pink-50 to-purple-50 flex flex-col items-center justify-center gap-2 group-hover:scale-105 transition-transform duration-700">
-                <User className="w-16 h-16 text-purple-300" />
-                <span className="text-xs font-medium uppercase tracking-wider text-purple-400">Photo Coming Soon</span>
-              </div>
+              <img src="https://res.cloudinary.com/dfw9z5ajv/image/upload/v1782316528/IMG_3847_y0hwpx.png"
+                   alt="Moosa Mir"
+                   className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700" />
             </div>
             <div className="p-8">
               <h3 className="text-2xl font-medium text-gray-900 mb-1">Moosa Mir</h3>
